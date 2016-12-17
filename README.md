@@ -22,10 +22,10 @@
 完成以下功能
 - 模拟教务系统登录
 - 个人信息查询
-![](https://github.com/xiang578/jwchelper/blob/master/src/info.jpg)
+<br/>![](https://github.com/xiang578/jwchelper/blob/master/src/info.jpg) 
 - 成绩查询
-![](https://github.com/xiang578/jwchelper/blob/master/src/score.jpg)
+<br/>![](https://github.com/xiang578/jwchelper/blob/master/src/score.jpg) 
 - 个人课表查询
-![](https://github.com/xiang578/jwchelper/blob/master/src/table.jpg)
+<br/>![](https://github.com/xiang578/jwchelper/blob/master/src/table.jpg)
 - 考试查询
-![](https://github.com/xiang578/jwchelper/blob/master/src/test.jpg)
+<br/>![](https://github.com/xiang578/jwchelper/blob/master/src/test.jpg)
