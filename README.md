@@ -1,11 +1,11 @@
 # jwxk助手
 
-- [github项目](https://github.com/xiang578/jwchelper) [博客反馈](http://www.xiang578.com/jwc/)
+- [github项目](https://github.com/xiang578/jwchelper) [留言反馈](http://www.xiang578.com/jwc/)
 - 感谢loveyu（[博客](https://www.loveyu.org/) [github](https://github.com/loveyu)）提供项目[JiaowuHelper](https://github.com/loveyu/JiaowuHelper)
 - 本项目由JiaowuHelper改写而成，采用C#编码
 - 仅供浙江财经大学学生内部交流学习使用，严禁用于商业用途
 - 软件原理为模拟浏览器发送接收数据，没有使用任何教务系统漏洞
-- 如果发现软件中的bug，可以在我的[博客](http://www.xiang578.com/jwc/)下留言指出，或者可以通过xryzcn+jwc@gmail.com联系我
+- 如果发现软件中的bug，可以在我的[博客](http://www.xiang578.com/jwc/)下留言指出，或者通过xryzcn+jwc@gmail.com联系我
 - 不保证对所有的留言回复，保留最终不解释权
 
 ## 下载
