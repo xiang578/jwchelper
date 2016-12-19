@@ -28,6 +28,7 @@
 
 ### Beta0.3
 - 低配版选课模块
+<br/>![](https://github.com/xiang578/jwchelper/blob/master/src/xuanke.png) 
 
 ### Beta0.2
 - 解决需要e盘才能运行问题 
