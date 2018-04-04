@@ -1,0 +1,26 @@
+﻿<Page xmlns:mui="http://firstfloorsoftware.com/ModernUI"  x:Class="正方系统抢课辅助.Pages.IntroducePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+	Title="系统说明页面">
+
+    <Grid Style="{StaticResource ContentRoot}">
+        <ScrollViewer>
+            <StackPanel>
+                <TextBlock Text="作者声明" Style="{StaticResource Heading1}" Margin="0,0,0,8"></TextBlock>
+                <TextBlock Text="1、本软件所有涉及的正方系统登录认证的功能的实现均是通过网页抓包得来，并未通过任何不正当方法获得。&#13;
+2、本软件仅供研究学习之用，不得使用本软件损害正方公司商业利益。&#13;
+3、本软件不可用于任何商业和非法用途，否则责任自负。&#13;
+4、本软件在发布前均通过一般性应用测试，但不保证任何情况下对机器无害，由于未知的使用环境或不当的使用对计算机造成的损害，责任由使用者全部承担。&#13;
+5.本软件版权没有，翻印不究，但请协助改进本作品。&#13;
+6.本软件属开源软件，如果需要修改本软件源码以进行二次发布，也请继续公开源代码。&#13;
+由于任何不遵守上叙条例引起的纠纷，均与本人无关，如不同意该声明请不要使用该软件，谢谢合作。" Margin="0,0,0,32" />
+                <TextBlock Text="作者联系方式" Style="{StaticResource Heading2}" Margin="0,0,0,8"></TextBlock>
+                <TextBlock Text="QQ:50595531&#13;Email:cruncheng@hotmail.com" Margin="0,0,0,30"></TextBlock>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

@@ -1,0 +1,25 @@
+﻿<Page x:Class="正方系统抢课辅助.MainPages"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+	Title="MainPages">
+    <StackPanel Orientation="Horizontal">
+        <StackPanel HorizontalAlignment="Left" Orientation="Vertical" VerticalAlignment="Top" Width="130">
+            <Button Name="btn_schedule" Click="btn_schedule_Click_1" >课程表</Button>
+            <Button HorizontalAlignment="Left" VerticalAlignment="Top"  Name="btn_Score" Click="btn_Score_Click" Height="30" Width="130">成绩</Button>
+            <Button Content="个人信息" Name="btn_Personalmessage" Height="40"  Click="btn_Personalmessage_Click"/>
+            <Button Content="学生评价" Name="btn_Evaluate" Height="30" Click="btn_Evaluate_Click_1"></Button>
+            <Button Content="专业选修课选课" Name="btn_ProfessionChoose" Height="30" Click="btn_ProfessionChoose_Click_1" ></Button>
+            <Button Content="全校性公选课" Name="btn_PublicCourseChoose" Height="30" Click="btn_PublicCourseChoose_Click_1" ></Button>
+            <Button Content="四六级报考" Name="btn_CET46" Height="30" Click="btn_CET46_Click_1" ></Button>
+            <TextBlock Name="navigateTextBlock" Margin="10,10,10,0">     
+         <Hyperlink Name="hyperlink0" Click="hyperlink0_Click"   > 进入网页</Hyperlink>
+         <LineBreak ></LineBreak>
+            </TextBlock>
+
+        </StackPanel>
+        <Frame Name="frame_navigate" ></Frame>
+    </StackPanel>
+</Page>

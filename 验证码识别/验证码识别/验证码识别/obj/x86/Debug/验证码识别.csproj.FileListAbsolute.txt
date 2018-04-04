@@ -1,0 +1,24 @@
+i:\users\chan\documents\visual studio 2010\Projects\验证码识别\验证码识别\obj\x86\Debug\MainWindow.baml
+i:\users\chan\documents\visual studio 2010\Projects\验证码识别\验证码识别\obj\x86\Debug\MainWindow.g.cs
+i:\users\chan\documents\visual studio 2010\Projects\验证码识别\验证码识别\obj\x86\Debug\App.g.cs
+i:\users\chan\documents\visual studio 2010\Projects\验证码识别\验证码识别\obj\x86\Debug\验证码识别_MarkupCompile.cache
+i:\users\chan\documents\visual studio 2010\Projects\验证码识别\验证码识别\obj\x86\Debug\验证码识别.g.resources
+i:\users\chan\documents\visual studio 2010\Projects\验证码识别\验证码识别\obj\x86\Debug\验证码识别.Properties.Resources.resources
+i:\users\chan\documents\visual studio 2010\Projects\验证码识别\验证码识别\obj\x86\Debug\验证码识别.csproj.GenerateResource.Cache
+i:\users\chan\documents\visual studio 2010\Projects\验证码识别\验证码识别\bin\Debug\验证码识别.exe
+i:\users\chan\documents\visual studio 2010\Projects\验证码识别\验证码识别\bin\Debug\验证码识别.pdb
+i:\users\chan\documents\visual studio 2010\Projects\验证码识别\验证码识别\bin\Debug\System.Web.dll
+i:\users\chan\documents\visual studio 2010\Projects\验证码识别\验证码识别\obj\x86\Debug\验证码识别.exe
+i:\users\chan\documents\visual studio 2010\Projects\验证码识别\验证码识别\obj\x86\Debug\验证码识别.pdb
+E:\OneDrive\jwchelper\验证码识别\验证码识别\验证码识别\obj\x86\Debug\验证码识别.exe
+E:\OneDrive\jwchelper\验证码识别\验证码识别\验证码识别\obj\x86\Debug\验证码识别.pdb
+E:\OneDrive\jwchelper\验证码识别\验证码识别\验证码识别\bin\Debug\验证码识别.exe
+E:\OneDrive\jwchelper\验证码识别\验证码识别\验证码识别\bin\Debug\验证码识别.pdb
+E:\OneDrive\jwchelper\验证码识别\验证码识别\验证码识别\obj\x86\Debug\验证码识别.csprojResolveAssemblyReference.cache
+E:\OneDrive\jwchelper\验证码识别\验证码识别\验证码识别\obj\x86\Debug\MainWindow.baml
+E:\OneDrive\jwchelper\验证码识别\验证码识别\验证码识别\obj\x86\Debug\MainWindow.g.cs
+E:\OneDrive\jwchelper\验证码识别\验证码识别\验证码识别\obj\x86\Debug\App.g.cs
+E:\OneDrive\jwchelper\验证码识别\验证码识别\验证码识别\obj\x86\Debug\验证码识别_MarkupCompile.cache
+E:\OneDrive\jwchelper\验证码识别\验证码识别\验证码识别\obj\x86\Debug\验证码识别.g.resources
+E:\OneDrive\jwchelper\验证码识别\验证码识别\验证码识别\obj\x86\Debug\验证码识别.Properties.Resources.resources
+E:\OneDrive\jwchelper\验证码识别\验证码识别\验证码识别\obj\x86\Debug\验证码识别.csproj.GenerateResource.Cache

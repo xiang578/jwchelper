@@ -1,0 +1,104 @@
+﻿<Page x:Class="正方系统抢课辅助.SchedulePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      Name="Schedule"
+	Title="课程表" Loaded="Schedule_Loaded" >
+    <Page.Resources>
+        <Style TargetType="Border">
+            <Setter  Property="BorderBrush" Value="Gray"></Setter>
+            <Setter Property="BorderThickness" Value="1"></Setter>
+        </Style>
+    </Page.Resources>
+    
+    <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock Text="学年:" FontSize="20" FontFamily="黑体"></TextBlock>
+                <ComboBox Name="cmb_shoolYear"  Width="160"  Height="30" SelectionChanged="cmb_SelectionChanged_1"></ComboBox>
+                <TextBlock Text="学期：" FontSize="20" FontFamily="黑体" Margin="50,0,0,0"  ></TextBlock> 
+                <ComboBox Name="cmb_term" Width="160" Height="30" SelectionChanged="cmb_SelectionChanged_1" ></ComboBox>
+            </StackPanel>
+        <Border Height="430" Width="850">
+            <ScrollViewer Name="scrollViewer" VerticalScrollBarVisibility="Hidden"  Margin="0,0,0,0"  >
+            <Grid Margin="0,0,0,0" Name="grid_schedule"  VerticalAlignment="Top" HorizontalAlignment="Left" Width="850"  >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80"></ColumnDefinition>
+                    <ColumnDefinition Width="10*"></ColumnDefinition>
+                    <ColumnDefinition Width="10*"></ColumnDefinition>
+                    <ColumnDefinition Width="10*"></ColumnDefinition>
+                    <ColumnDefinition Width="10*"></ColumnDefinition>
+                    <ColumnDefinition Width="10*"></ColumnDefinition>
+                    <ColumnDefinition Width="10*"></ColumnDefinition>
+                    <ColumnDefinition Width="10*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="45"></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Column="0" Grid.Row="0" ShowGridLines="True">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+
+                    <TextBlock Grid.Column="1" Grid.Row="0" TextAlignment="Left" FontSize="20" >星期</TextBlock>
+                    <TextBlock Grid.Column="0" Grid.Row="1" TextAlignment="Justify" FontSize="20" >节次</TextBlock>
+                </Grid>
+                <Border Grid.Column="1">
+                    <TextBlock  FontSize="20"  >星期一</TextBlock>
+                </Border>
+                <Border Grid.Column="2">
+                    <TextBlock  FontSize="20"  >星期二</TextBlock>
+                </Border>
+                <Border Grid.Column="3">
+                    <TextBlock  FontSize="20" Grid.Column="3" >星期三</TextBlock>
+                </Border>
+                <Border Grid.Column="4">
+                    <TextBlock  FontSize="20" Grid.Column="4" >星期四</TextBlock>
+                </Border>
+                <Border Grid.Column="5">
+                    <TextBlock  FontSize="20" Grid.Column="5" >星期五</TextBlock>
+                </Border>
+                <Border Grid.Column="6">
+                    <TextBlock  FontSize="20" Grid.Column="6" >星期六</TextBlock>
+                </Border>
+                <Border Grid.Column="7">
+                    <TextBlock  FontSize="20" Grid.Column="7" >星期日</TextBlock>
+                </Border>
+
+
+                <Border Grid.Row="1">
+                    <TextBlock Name="txb_12" LineHeight="10" Grid.Row="1"  >第一二节</TextBlock>
+                </Border>
+                <Border Grid.Row="2">
+                    <TextBlock Name="txb_34" LineHeight="10"  Grid.Row="2"  Height="80">第三四节</TextBlock>
+                </Border>
+                <Border Grid.Row="3">
+                    <TextBlock Name="txb_56" LineHeight="10"  Grid.Row="3"  Height="80">第五六节</TextBlock>
+                </Border>
+                <Border Grid.Row="4">
+                    <TextBlock Name="txb_78" LineHeight="10"   Grid.Row="4" Height="80">第七八节</TextBlock>
+                </Border>
+                <Border Grid.Row="5">
+                    <TextBlock Name="txb_910" LineHeight="10" Grid.Row="5"   Height="80">第九十节</TextBlock>
+                </Border>
+            <ProgressBar Name="progressBar" Grid.RowSpan="6" Grid.Column="3" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            </Grid>
+
+        </ScrollViewer>   
+            
+        </Border>
+        </StackPanel>
+
+</Page>

@@ -1,0 +1,65 @@
+﻿<Page x:Class="正方系统抢课辅助.PersonalMessage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="1000"
+	Title="PersonalMessage">
+
+    <Grid Name="grid_StudentMsg" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+        <!--<Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>-->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Stretch">
+            <TextBlock FontSize="25" Height="30" FontFamily="黑体" VerticalAlignment="Center" >姓名：</TextBlock>
+            <TextBlock FontSize="20" Height="25" VerticalAlignment="Center" Width="120" Text="{Binding StuName}"></TextBlock>
+            <TextBlock FontSize="25" Height="30" VerticalAlignment="Center" >学号：</TextBlock>
+            <TextBlock FontSize="20" Height="25" VerticalAlignment="Center" Width="200" Text="{Binding StuNum}"></TextBlock>
+            <TextBlock FontSize="25" Height="30" VerticalAlignment="Center">专业方向：</TextBlock>
+            <TextBlock FontSize="20" Height="25" VerticalAlignment="Center" Width="150" Text="{Binding MajorField}"></TextBlock>
+            <TextBlock FontSize="25" Height="30" VerticalAlignment="Center" >民族：</TextBlock>
+            <TextBlock FontSize="20" Height="25" VerticalAlignment="Center" Width="100" Text="{Binding Nation}"></TextBlock>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Stretch" Grid.Row="1">
+            <TextBlock FontSize="25" Height="30" VerticalAlignment="Center" >毕业中学：</TextBlock>
+            <TextBlock FontSize="20" Height="25" VerticalAlignment="Center" Width="200" Text="{Binding GraditionMiddleSchool}"></TextBlock>
+            <TextBlock FontSize="25" Height="30" VerticalAlignment="Center">出生日期：</TextBlock>
+            <TextBlock FontSize="20" Height="25" VerticalAlignment="Center" Width="150" Text="{Binding Brithday}"></TextBlock>
+            <TextBlock FontSize="25" Height="30" VerticalAlignment="Center">籍贯：</TextBlock>
+            <TextBlock FontSize="20" Height="25" VerticalAlignment="Center" Width="150" Text="{Binding NativePlace}"></TextBlock>
+
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Stretch" Grid.Row="2">
+            <TextBlock FontSize="25" Height="30" VerticalAlignment="Center" >身份证：</TextBlock>
+            <TextBlock FontSize="20" Height="25" VerticalAlignment="Center" Width="300" Text="{Binding IdentityCard}"></TextBlock>
+            <TextBlock FontSize="25" Height="30" VerticalAlignment="Center" >学历层次：</TextBlock>
+            <TextBlock FontSize="20" Height="25" VerticalAlignment="Center" Width="180" Text="{Binding QualificationLevels}"></TextBlock>
+            <TextBlock FontSize="25" Height="30" VerticalAlignment="Center">政治面貌：</TextBlock>
+            <TextBlock FontSize="20" Height="25" VerticalAlignment="Center" Width="150" Text="{Binding PoliticsStatus}"></TextBlock>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Stretch" Grid.Row="3">
+            <TextBlock FontSize="25" Height="30" VerticalAlignment="Center" >行政班：</TextBlock>
+            <TextBlock FontSize="20" Height="25" VerticalAlignment="Center" Width="350" Text="{Binding ExecutiveCourses}"></TextBlock>
+            <TextBlock FontSize="25" Height="30" VerticalAlignment="Center" >学制：</TextBlock>
+            <TextBlock FontSize="20" Height="25" VerticalAlignment="Center" Width="120" Text="{Binding LengthOfSchool}"></TextBlock>
+
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Stretch" Grid.Row="4">
+            <TextBlock FontSize="25" Height="30" VerticalAlignment="Center">学院：</TextBlock>
+            <TextBlock FontSize="20" Height="25" VerticalAlignment="Center" Width="200" Text="{Binding Academy}"></TextBlock>
+            <TextBlock FontSize="25" Height="30" VerticalAlignment="Center"> 专业名称：</TextBlock>
+            <TextBlock FontSize="20" Height="25" VerticalAlignment="Center" Width="200" Text="{Binding MajorName}"></TextBlock>
+        </StackPanel>
+    </Grid>
+</Page>

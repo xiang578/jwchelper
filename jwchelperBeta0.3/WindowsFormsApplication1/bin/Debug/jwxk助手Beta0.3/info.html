@@ -1,0 +1,377 @@
+﻿
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML lang="gb2312">
+	<HEAD>
+		<title>现代教学管理信息系统</title><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+		<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+		<meta http-equiv="Content-Language" content="gb2312">
+		<meta content="all" name="robots">
+		<meta content="作者信息" name="author">
+		<meta content="版权信息" name="Copyright">
+		<meta content="站点介绍" name="description">
+		<meta content="站点关键词" name="keywords">
+		<LINK href="style/base/favicon.ico" type="image/x-icon" rel="icon">
+			<LINK media="all" href="style/base/jw.css" type="text/css" rel="stylesheet">
+				<LINK media="all" href="style/standard/jw.css" type="text/css" rel="stylesheet">
+					<!-----------	<SCRIPT language="javascript">
+				function check() {				
+						alert("请问清楚上传途径，网上上传现不开放！。");
+					    return;
+				                     }						
+		</SCRIPT>-------------->
+					<SCRIPT language="javascript">
+					
+		   function datePopUp()
+				{	
+					var field = window.event.srcElement.field;
+					var params = new Object();
+					params.value = document.all(field).value;
+					params.dateFormat = document.all(field).dateFormat;
+					var dateValue = ""
+
+
+					if (language())
+					{
+						dateValue = window.showModalDialog("calendar_English.htm", params, "help=no;status=no; dialogHeight:0px; dialogWidth:0px; dialogTop:0px; dialogLeft:0px");
+					}
+					else
+					{
+						dateValue = window.showModalDialog("calendar.htm", params, "help=no;status=no; dialogHeight:0px; dialogWidth:0px; dialogTop:0px; dialogLeft:0px");
+				
+					}
+					
+					
+					if (document.all(field).dateFormat == "ymd")
+						document.all(field).value = dateValue.replace(/[-\/.]/g,"");
+					else
+					{
+						document.all(field).value = dateValue;
+					}
+				}
+				function checkRDTSJ(obj){
+					var rdtsj=obj.value;
+					var reg=/((^((1[8-9]\d{2})|([2-9]\d{3}))(10|12|0?[13578])(3[01]|[12][0-9]|0?[1-9])$)|(^((1[8-9]\d{2})|([2-9]\d{3}))(11|0?[469])(30|[12][0-9]|0?[1-9])$)|(^((1[8-9]\d{2})|([2-9]\d{3}))(0?2)(2[0-8]|1[0-9]|0?[1-9])$)|(^([2468][048]00)(0?2)(29)$)|(^([3579][26]00)(0?2)(29)$)|(^([1][89][0][48])(0?2)(29)$)|(^([2-9][0-9][0][48])(0?2)(29)$)|(^([1][89][2468][048])(0?2)(29)$)|(^([2-9][0-9][2468][048])(0?2)(29)$)|(^([1][89][13579][26])(0?2)(29)$)|(^([2-9][0-9][13579][26])(0?2)(29)$))/;
+					if(!rdtsj.match(reg))
+					{
+						if (language())
+						{
+							alert("Time for joining League or Party is illegal!");
+						}
+						else
+						{
+							alert("入党(团)时间不合法！");
+						}
+						
+						obj.focus();
+						obj.select();
+					}
+				}
+				
+				function language()
+				{
+					var lan=document.getElementById("hidLanguage").value;
+					if (lan=="English")
+					{
+						return true;
+					}
+					else
+					{
+						return false;
+					}
+				}
+				
+				function dq(obj,bs){
+			    	var xjsbh
+			    	//modify by lim 20110128 添加用户名
+			    	if (bs=="1"){xjsbh=window.showModalDialog('dqxz.aspx?xh=140104200230&type=qr','选择地区','dialogWidth=750px;dialogHeight=450px;scrollbars=no;resizable=no');}
+			    	else
+			    	//modify by lim 20110128 添加用户名
+			    	{xjsbh=window.showModalDialog('dqxz.aspx?xh=140104200230&type=x','选择地区','dialogWidth=750px;dialogHeight=450px;scrollbars=no;resizable=no');}
+			    	
+			  		if(xjsbh != "" && xjsbh != undefined){  	
+			  		document.getElementById(obj).value=xjsbh;
+			  		//document.getElementById('btCsd').value=xjsbh;
+			  		//document.getElementById('btCsd').innerText=xjsbh;
+			  	    }
+			  	}
+			  	
+			
+					</SCRIPT>
+					<STYLE>.WebUserControl11showarrow {
+	MARGIN-LEFT: -80px; WIDTH: 98px
+}
+.WebUserControl11textboxwidth {
+	WIDTH: 22px
+}
+</STYLE>
+	</HEAD>
+	<BODY>
+		<form name="Form1" method="post" action="xsgrxx.aspx?xh=140104200230&amp;xm=%CF%EE%C8%F2%D2%B1&amp;gnmkdm=N121501" id="Form1" enctype="multipart/form-data">
+<input type="hidden" name="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" value="dDwtNDk4MDU2OTM0O3Q8O2w8aTwwPjs+O2w8dDxwPGw8ZW5jdHlwZTs+O2w8bXVsdGlwYXJ0L2Zvcm0tZGF0YTs+PjtsPGk8NT47aTwxNz47aTwyND47aTwzMz47aTwzND47aTw1ND47aTw1NT47aTw1OT47aTw2MD47aTw2OT47aTw3MT47aTw3NT47aTw3Nj47aTw4MD47aTw4MT47aTw4NT47aTw4Nj47aTw5MD47aTw5MT47aTw5NT47aTw5Nj47aTwxMDA+O2k8MTAyPjtpPDEwND47aTwxMDg+O2k8MTA5PjtpPDExMz47aTwxMTQ+O2k8MTIwPjtpPDEyMT47aTwxMjU+O2k8MTI2PjtpPDEzMD47aTwxMzE+O2k8MTQyPjtpPDE0Mz47aTwxNDc+O2k8MTQ4PjtpPDE1Nj47aTwxNjA+O2k8MTYxPjtpPDE2NT47aTwxNjY+O2k8MTcwPjtpPDE3MT47aTwxNzU+O2k8MTc2PjtpPDE4MD47aTwxODE+O2k8MTg1PjtpPDE4Nj47aTwxOTA+O2k8MTkxPjtpPDE5NT47aTwxOTY+O2k8MjAwPjtpPDIwMT47aTwyMTA+O2k8MjExPjtpPDIyNT47aTwyMjY+O2k8MjMwPjtpPDIzMT47aTwyMzk+O2k8MjQwPjtpPDI1ND47aTwyNTU+O2k8MjY0PjtpPDI2NT47aTwyNzk+O2k8MjgwPjtpPDI4NT47aTwyODc+O2k8MjkyPjtpPDI5Mz47aTwyOTc+O2k8Mjk4PjtpPDMwMz47aTwzMDQ+O2k8MzA4PjtpPDMwOT47aTwzMTk+O2k8MzIwPjtpPDMyMj47aTwzMjQ+O2k8MzI2PjtpPDMyOD47aTwzMzI+O2k8MzM1PjtpPDMzNj47aTwzMzg+O2k8MzQyPjs+O2w8dDxwPHA8bDxUZXh0Oz47bDwxNDAxMDQyMDAyMzA7Pj47Pjs7Pjt0PHA8cDxsPEltYWdlVXJsOz47bDxyZWFkaW1hZ2V4cy5hc3B4P3hoPTE0MDEwNDIwMDIzMDs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w86aG56Zew5Ya2Oz4+Oz47Oz47dDxwPHA8bDxSZWFkT25seTtCYWNrQ29sb3I7XyFTQjtWaXNpYmxlOz47bDxvPGY+OzI8U2t5Qmx1ZT47aTw4PjtvPHQ+Oz4+Oz47Oz47dDxwPHA8bDxWaXNpYmxlOz47bDxvPGY+Oz4+Oz47Oz47dDx0PDs7bDxpPDE+Oz4+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w855S3Oz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDwyMDE0MDgzMDs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8MjAxNDA4MzA7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDE5OTUxMDA3Oz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDwxOTk1MTAwNzs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w85Y+w5bee5biC56ys5LiA5Lit5a2mOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDzlj7Dlt57luILnrKzkuIDkuK3lraY7Pj47Pjs7Pjt0PHA8cDxsPFJlYWRPbmx5O0JhY2tDb2xvcjtfIVNCO1Zpc2libGU7PjtsPG88Zj47MjxTa3lCbHVlPjtpPDg+O288dD47Pj47Pjs7Pjt0PHA8cDxsPFZpc2libGU7PjtsPG88Zj47Pj47Pjs7Pjt0PHQ8cDxwPGw8RGF0YVRleHRGaWVsZDtEYXRhVmFsdWVGaWVsZDs+O2w8bXptYzttem1jOz4+Oz47dDxpPDYwPjtAPOaxieaXjztcZTvmsYnml4876JKZ5Y+k5pePO+WbnuaXjzvol4/ml48757u05ZC+5bCU5pePO+iLl+aXjzvlvZ3ml4875aOu5pePO+W4g+S+neaXjzvmnJ3pspzml4875ruh5pePO+S+l+aXjzvnkbbml48755m95pePO+Wcn+WutuaXjzvlk4jlsLzml4875ZOI6JCo5YWL5pePO+WCo+aXjzvpu47ml4875YKI5YKI5pePO+S9pOaXjzvnlbLml4876auY5bGx5pePO+aLieelnOaXjzvmsLTml4875Lic5Lmh5pePO+e6s+ilv+aXjzvmma/poofml4875p+v5bCU5pePO+Wcn+aXjzvovr7mlqHlsJTml4875Lur5L2s5pePO+e+jOaXjzvluIPmnJfml4875pKS5ouJ5pePO+avm+WNl+aXjzvku6Hkvazml4876ZSh5Lyv5pePO+mYv+aYjOaXjzvmma7nsbPml4875aGU5ZCJ5YWL5pePO+aAkuaXjzvkuYzlrZzliKvlhYvml4875L+E572X5pav5pePO+mEgua4qeWFi+aXjzvltKnpvpnml4875L+d5a6J5pePO+ijleWbuuaXjzvkuqzml4875aGU5aGU5bCU5pePO+eLrOm+meaXjzvphILkvKbmmKXml4876LWr5ZOy5pePO+mXqOW3tOaXjzvnj57lt7Tml4875Z+66K+65pePO+WFtuWugzvlpJblm73ooYDnu5/kuK3lm73nsY3kurrlo6s7PjtAPOaxieaXjztcZTvmsYnml4876JKZ5Y+k5pePO+WbnuaXjzvol4/ml48757u05ZC+5bCU5pePO+iLl+aXjzvlvZ3ml4875aOu5pePO+W4g+S+neaXjzvmnJ3pspzml4875ruh5pePO+S+l+aXjzvnkbbml48755m95pePO+Wcn+WutuaXjzvlk4jlsLzml4875ZOI6JCo5YWL5pePO+WCo+aXjzvpu47ml4875YKI5YKI5pePO+S9pOaXjzvnlbLml4876auY5bGx5pePO+aLieelnOaXjzvmsLTml4875Lic5Lmh5pePO+e6s+ilv+aXjzvmma/poofml4875p+v5bCU5pePO+Wcn+aXjzvovr7mlqHlsJTml4875Lur5L2s5pePO+e+jOaXjzvluIPmnJfml4875pKS5ouJ5pePO+avm+WNl+aXjzvku6Hkvazml4876ZSh5Lyv5pePO+mYv+aYjOaXjzvmma7nsbPml4875aGU5ZCJ5YWL5pePO+aAkuaXjzvkuYzlrZzliKvlhYvml4875L+E572X5pav5pePO+mEgua4qeWFi+aXjzvltKnpvpnml4875L+d5a6J5pePO+ijleWbuuaXjzvkuqzml4875aGU5aGU5bCU5pePO+eLrOm+meaXjzvphILkvKbmmKXml4876LWr5ZOy5pePO+mXqOW3tOaXjzvnj57lt7Tml4875Z+66K+65pePO+WFtuWugzvlpJblm73ooYDnu5/kuK3lm73nsY3kurrlo6s7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPOaxieaXjzs+Pjs+Ozs+O3Q8cDxwPGw8UmVhZE9ubHk7QmFja0NvbG9yO18hU0I7VmlzaWJsZTs+O2w8bzxmPjsyPFNreUJsdWU+O2k8OD47bzx0Pjs+Pjs+Ozs+O3Q8cDxwPGw8VmlzaWJsZTs+O2w8bzxmPjs+Pjs+Ozs+O3Q8cDxwPGw8UmVhZE9ubHk7QmFja0NvbG9yO18hU0I7VmlzaWJsZTs+O2w8bzxmPjsyPFNreUJsdWU+O2k8OD47bzx0Pjs+Pjs+Ozs+O3Q8cDxwPGw8VmlzaWJsZTs+O2w8bzxmPjs+Pjs+Ozs+O3Q8cDxwPGw8VmlzaWJsZTs+O2w8bzx0Pjs+Pjs+Ozs+O3Q8dDxwPHA8bDxEYXRhVGV4dEZpZWxkO0RhdGFWYWx1ZUZpZWxkO0JhY2tDb2xvcjtfIVNCO1Zpc2libGU7PjtsPGpnbWM7amdtYzsyPFNreUJsdWU+O2k8OD47bzx0Pjs+Pjs+O3Q8aTwxPjtAPFxlOz47QDxcZTs+Pjs+Ozs+O3Q8cDxwPGw8VmlzaWJsZTs+O2w8bzxmPjs+Pjs+Ozs+O3Q8cDxwPGw8UmVhZE9ubHk7QmFja0NvbG9yO18hU0I7VmlzaWJsZTs+O2w8bzxmPjsyPFNreUJsdWU+O2k8OD47bzx0Pjs+Pjs+Ozs+O3Q8cDxwPGw8VmlzaWJsZTs+O2w8bzxmPjs+Pjs+Ozs+O3Q8cDxwPGw8UmVhZE9ubHk7QmFja0NvbG9yO18hU0I7VmlzaWJsZTs+O2w8bzxmPjsyPFNreUJsdWU+O2k8OD47bzx0Pjs+Pjs+Ozs+O3Q8cDxwPGw8VmlzaWJsZTs+O2w8bzxmPjs+Pjs+Ozs+O3Q8dDxwPHA8bDxEYXRhVGV4dEZpZWxkO0RhdGFWYWx1ZUZpZWxkOz47bDxaWk1NbWM7WlpNTW1jOz4+Oz47dDxpPDc+O0A85YWx6Z2S5Zui5ZGYIDtcZTvkuK3lhbHlhZrlkZg7576k5LyXO+WFtuS7ljvlhbHpnZLlm6LlkZg75Lit5YWx6aKE5aSH5YWa5ZGYOz47QDzlhbHpnZLlm6LlkZggO1xlO+S4reWFseWFmuWRmDvnvqTkvJc75YW25LuWO+WFsemdkuWbouWRmDvkuK3lhbHpooTlpIflhZrlkZg7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPOWFsemdkuWbouWRmCA7Pj47Pjs7Pjt0PHA8cDxsPFJlYWRPbmx5O0JhY2tDb2xvcjtfIVNCO1Zpc2libGU7PjtsPG88Zj47MjxTa3lCbHVlPjtpPDg+O288dD47Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7VmlzaWJsZTs+O2w8MTM3Mzg1MDczNzksMTM1ODYxNTk7bzxmPjs+Pjs+Ozs+O3Q8cDxwPGw8UmVhZE9ubHk7QmFja0NvbG9yO18hU0I7VmlzaWJsZTs+O2w8bzxmPjsyPFNreUJsdWU+O2k8OD47bzx0Pjs+Pjs+Ozs+O3Q8cDxwPGw8VmlzaWJsZTs+O2w8bzxmPjs+Pjs+Ozs+O3Q8cDxwPGw8UmVhZE9ubHk7QmFja0NvbG9yO18hU0I7VmlzaWJsZTs+O2w8bzxmPjsyPFNreUJsdWU+O2k8OD47bzx0Pjs+Pjs+Ozs+O3Q8cDxwPGw8VmlzaWJsZTs+O2w8bzxmPjs+Pjs+Ozs+O3Q8cDxwPGw8UmVhZE9ubHk7QmFja0NvbG9yO18hU0I7VmlzaWJsZTs+O2w8bzxmPjsyPFNreUJsdWU+O2k8OD47bzx0Pjs+Pjs+Ozs+O3Q8cDxwPGw8VmlzaWJsZTs+O2w8bzxmPjs+Pjs+Ozs+O3Q8dDxwPHA8bDxEYXRhVGV4dEZpZWxkO0RhdGFWYWx1ZUZpZWxkOz47bDxtYzttYzs+Pjs+O3Q8aTwxPjtAPC0t6YCJ5oup55yB5Lu9LS07PjtAPFxlOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDwzMTE3Oz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDwzMTE3Oz4+Oz47Oz47dDxwPHA8bDxSZWFkT25seTtCYWNrQ29sb3I7XyFTQjtWaXNpYmxlOz47bDxvPGY+OzI8U2t5Qmx1ZT47aTw4PjtvPHQ+Oz4+Oz47Oz47dDxwPHA8bDxWaXNpYmxlOz47bDxvPGY+Oz4+Oz47Oz47dDxwPHA8bDxSZWFkT25seTtCYWNrQ29sb3I7XyFTQjtWaXNpYmxlOz47bDxvPGY+OzI8U2t5Qmx1ZT47aTw4PjtvPHQ+Oz4+Oz47Oz47dDxwPHA8bDxWaXNpYmxlOz47bDxvPGY+Oz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDwzMzEwODIxOTk1MTAwNzc0NTg7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDMzMTA4MjE5OTUxMDA3NzQ1ODs+Pjs+Ozs+O3Q8cDxwPGw8UmVhZE9ubHk7QmFja0NvbG9yO18hU0I7VmlzaWJsZTs+O2w8bzxmPjsyPFNreUJsdWU+O2k8OD47bzx0Pjs+Pjs+Ozs+O3Q8cDxwPGw8VmlzaWJsZTs+O2w8bzxmPjs+Pjs+Ozs+O3Q8cDxwPGw8UmVhZE9ubHk7QmFja0NvbG9yO18hU0I7VmlzaWJsZTs+O2w8bzxmPjsyPFNreUJsdWU+O2k8OD47bzx0Pjs+Pjs+Ozs+O3Q8cDxwPGw8VmlzaWJsZTs+O2w8bzxmPjs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w85pys56eROz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDzmnKznp5E7Pj47Pjs7Pjt0PHA8cDxsPFJlYWRPbmx5O0JhY2tDb2xvcjtfIVNCO1Zpc2libGU7PjtsPG88Zj47MjxTa3lCbHVlPjtpPDg+O288dD47Pj47Pjs7Pjt0PHA8cDxsPFZpc2libGU7PjtsPG88Zj47Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPOS/oeaBr+euoeeQhuS4juW3peeoi+WtpumZojs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w85L+h5oGv566h55CG5LiO5bel56iL5a2m6ZmiOz4+Oz47Oz47dDxwPHA8bDxSZWFkT25seTtCYWNrQ29sb3I7XyFTQjtWaXNpYmxlOz47bDxvPGY+OzI8U2t5Qmx1ZT47aTw4PjtvPHQ+Oz4+Oz47Oz47dDxwPHA8bDxWaXNpYmxlOz47bDxvPGY+Oz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDzmtZnmsZ/nnIHlj7Dlt57luILkuLTmtbfluILmoYPmuJrplYfogIHljoLln7rmnZHkuJzkuprot68yM+WPtzs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w85rWZ5rGf55yB5Y+w5bee5biC5Li05rW35biC5qGD5ria6ZWH6ICB5Y6C5Z+65p2R5Lic5Lqa6LevMjPlj7c7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPOiuoeeul+acuuenkeWtpuS4juaKgOacrzs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w86K6h566X5py656eR5a2m5LiO5oqA5pyvOz4+Oz47Oz47dDxwPHA8bDxSZWFkT25seTtCYWNrQ29sb3I7XyFTQjtWaXNpYmxlOz47bDxvPGY+OzI8U2t5Qmx1ZT47aTw4PjtvPHQ+Oz4+Oz47Oz47dDxwPHA8bDxWaXNpYmxlOz47bDxvPGY+Oz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDwxNOiuoeeul+acujI7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDE06K6h566X5py6Mjs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8NDs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8NDs+Pjs+Ozs+O3Q8cDxwPGw8UmVhZE9ubHk7QmFja0NvbG9yO18hU0I7VmlzaWJsZTs+O2w8bzxmPjsyPFNreUJsdWU+O2k8OD47bzx0Pjs+Pjs+Ozs+O3Q8cDxwPGw8VmlzaWJsZTs+O2w8bzxmPjs+Pjs+Ozs+O3Q8cDxwPGw8UmVhZE9ubHk7QmFja0NvbG9yO18hU0I7VmlzaWJsZTs+O2w8bzxmPjsyPFNreUJsdWU+O2k8OD47bzxmPjs+Pjs+Ozs+O3Q8cDxwPGw8VmlzaWJsZTs+O2w8bzxmPjs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w85pyJOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDzmnIk7Pj47Pjs7Pjt0PHA8cDxsPFJlYWRPbmx5O0JhY2tDb2xvcjtfIVNCO1Zpc2libGU7PjtsPG88Zj47MjxTa3lCbHVlPjtpPDg+O288dD47Pj47Pjs7Pjt0PHA8cDxsPFZpc2libGU7PjtsPG88Zj47Pj47Pjs7Pjt0PHA8cDxsPFJlYWRPbmx5O0JhY2tDb2xvcjtfIVNCO1Zpc2libGU7PjtsPG88Zj47MjxTa3lCbHVlPjtpPDg+O288Zj47Pj47Pjs7Pjt0PHA8cDxsPFZpc2libGU7PjtsPG88Zj47Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDIwMTQ7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDIwMTQ7Pj47Pjs7Pjt0PHA8cDxsPFJlYWRPbmx5O0JhY2tDb2xvcjtfIVNCO1Zpc2libGU7PjtsPG88Zj47MjxTa3lCbHVlPjtpPDg+O288Zj47Pj47Pjs7Pjt0PHA8cDxsPFZpc2libGU7PjtsPG88Zj47Pj47Pjs7Pjt0PDtsPGk8MT47aTwzPjtpPDQ+O2k8NT47PjtsPHQ8O2w8aTwwPjtpPDE+Oz47bDx0PHA8cDxsPFRleHQ7PjtsPDE0MzMxMDg4MTUwNjg5Oz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDwxNDMzMTA4ODE1MDY4OTs+Pjs+Ozs+Oz4+O3Q8O2w8aTwwPjtpPDE+Oz47bDx0PHA8cDxsPFRleHQ7PjtsPOaZrumAmuWFqOaXpeWItjs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w85pmu6YCa5YWo5pel5Yi2Oz4+Oz47Oz47Pj47dDw7bDxpPDE+Oz47bDx0PHA8cDxsPFZpc2libGU7PjtsPG88Zj47Pj47Pjs7Pjs+Pjt0PDtsPGk8MT47PjtsPHQ8dDxwPHA8bDxWaXNpYmxlOz47bDxvPGY+Oz4+Oz47O2w8aTwwPjs+Pjs7Pjs+Pjs+Pjt0PHA8bDxWaXNpYmxlOz47bDxvPGY+Oz4+O2w8aTwxPjtpPDM+O2k8NT47PjtsPHQ8O2w8aTwwPjs+O2w8dDx0PHA8cDxsPERhdGFUZXh0RmllbGQ7RGF0YVZhbHVlRmllbGQ7PjtsPG1jO2RtOz4+Oz47dDxpPDE+O0A8LS3pgInmi6nnnIHku70tLTs+O0A8XGU7Pj47bDxpPDA+Oz4+Ozs+Oz4+O3Q8O2w8aTwwPjs+O2w8dDx0PDt0PGk8MT47QDwtLemAieaLqeWcsOWMui0tOz47QDxcZTs+PjtsPGk8MD47Pj47Oz47Pj47dDw7bDxpPDE+Oz47bDx0PHQ8O3Q8aTwxPjtAPC0t6YCJ5oup5Y6/5biCLS07PjtAPFxlOz4+Oz47Oz47Pj47Pj47dDxwPGw8VmlzaWJsZTs+O2w8bzxmPjs+PjtsPGk8MT47aTwzPjtpPDU+Oz47bDx0PDtsPGk8MD47PjtsPHQ8dDxwPHA8bDxEYXRhVGV4dEZpZWxkO0RhdGFWYWx1ZUZpZWxkOz47bDxtYztkbTs+Pjs+O3Q8aTwxPjtAPC0t6YCJ5oup55yB5Lu9LS07PjtAPFxlOz4+O2w8aTwwPjs+Pjs7Pjs+Pjt0PDtsPGk8MD47PjtsPHQ8dDw7dDxpPDE+O0A8LS3pgInmi6nlnLDljLotLTs+O0A8XGU7Pj47bDxpPDA+Oz4+Ozs+Oz4+O3Q8O2w8aTwwPjs+O2w8dDx0PDt0PGk8MT47QDwtLemAieaLqeWOv+W4gi0tOz47QDxcZTs+Pjs+Ozs+Oz4+Oz4+O3Q8cDxsPFZpc2libGU7PjtsPG88Zj47Pj47bDxpPDM+Oz47bDx0PDtsPGk8MD47PjtsPHQ8dDxwPHA8bDxEYXRhVGV4dEZpZWxkO0RhdGFWYWx1ZUZpZWxkOz47bDx4Ym1jO3hiZG07Pj47Pjt0PGk8MT47QDxcZTs+O0A8XGU7Pj47Pjs7Pjs+Pjs+Pjt0PHA8bDxWaXNpYmxlOz47bDxvPGY+Oz4+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8Jm5ic3BcOzs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8MTQwMTA0MjAwMjMwOz4+Oz47Oz47dDxwPGw8VmlzaWJsZTs+O2w8bzxmPjs+PjtsPGk8Mz47PjtsPHQ8QDA8Ozs7Ozs7Ozs7Oz47Oz47Pj47dDxwPDtwPGw8b25jbGljazs+O2w8d2luZG93LmNsb3NlKClcOzs+Pj47Oz47Pj47Pj47PtS8VTwzTfDMfP2BR5xJxlqrMN+Y" />
+
+<script language="javascript" type="text/javascript">
+<!--
+	function __doPostBack(eventTarget, eventArgument) {
+		var theform;
+		if (window.navigator.appName.toLowerCase().indexOf("microsoft") > -1) {
+			theform = document.Form1;
+		}
+		else {
+			theform = document.forms["Form1"];
+		}
+		theform.__EVENTTARGET.value = eventTarget.split("$").join(":");
+		theform.__EVENTARGUMENT.value = eventArgument;
+		theform.submit();
+	}
+// -->
+</script>
+
+			<input name="hidLanguage" id="hidLanguage" type="hidden" />
+			<div class="toolbox" style="display:none">
+				<!-- 按钮 -->
+				<div class="buttonbox"></div>
+				<!-- 按钮 -->
+				<!-- 过滤条件开始 -->
+				<!-- 过滤条件结束 -->
+				<!-- 过滤条件结束 -->
+				<p class="toolbox_fot"><em></em></p>
+			</div>
+			<!-- 多功能操作区 -->
+			<!-- 内容显示区开始 -->
+			<div class="main_box">
+				<div class="mid_box">
+					<div class="title">
+						<p>
+							<!-- 查询得到的数据量显示区域 --></p>
+					</div>
+					<!-- From内容 --><span class="formbox">
+						<table class="formlist" width="100%" align="center">
+							<tr>
+								<TD class="trbg1"><span id="lbxsgrxx_xh">学号：</span></TD>
+								<TD><span id="xh">140104200230</span></TD>
+								<TD class="trbg1"><span id="lbxsgrxx_xszh">学生证号：</span></TD>
+								<TD colSpan="2"><span id="lbl_xszh"></span></TD>
+								<td class="trbg1"><span id="lbxsgrxx_sjlx">手机类型：</span></td>
+								<td width="165"><span id="lbl_TELLX"></span></td>
+								<td rowSpan="6"><img id="xszp" src="readimagexs.aspx?xh=140104200230" alt="照片" align="AbsMiddle" border="0" height="144" width="112" /><br>
+									<span id="Label5"><b><font color="Red">建议文件大小：9-18K<br \>分辨率：96*128<br \>文件类型：jpg、jpeg、bmp</font></b></span></td>
+							</tr>
+							<tr>
+								<TD class="trbg1"><span id="lbxsgrxx_xm">姓名：</span></TD>
+								<TD><span id="xm">项闰冶</span></TD>
+								<TD class="trbg1"><span id="lbxsgrxx_pyfx">培养方向：</span></TD>
+								<TD colSpan="2"><span id="lbl_pyfx"></span></TD>
+								<td class="trbg1"><span id="lbxsgrxx_sjhm">手机号码：</span></td>
+								<td width="165"><input name="TELNUMBER" type="text" id="TELNUMBER" /></td>
+							</tr>
+							<tr>
+								<TD class="trbg1"><span id="lbxsgrxx_cym">曾用名：</span></TD>
+								<TD>
+									<P></P>
+									<P><span id="lbl_zym"></span></P>
+								</TD>
+								<TD class="trbg1"><span id="lbxsgrxx_zyfx">专业方向：</span></TD>
+								<TD colSpan="2"><span id="lbl_zyfx"></span></TD>
+								<td class="trbg1"><span id="lbxsgrxx_jtyb">家庭邮编：</span></td>
+								<td width="165"><span id="lbl_jtyb"></span></td>
+							</tr>
+							<tr>
+								<TD class="trbg1"><span id="lbxsgrxx_xb">性别：</span></TD>
+								<TD><span id="lbl_xb">男</span></TD>
+								<TD class="trbg1"><span id="lbxsgrxx_rxrq">入学日期：</span></TD>
+								<TD colSpan="2"><span id="lbl_rxrq">20140830</span></TD>
+								<td class="trbg1"><span id="lbxsgrxx_jtdh">家庭电话：</span></td>
+								<td width="165"><span id="lbl_jtdh"></span></td>
+							</tr>
+							<tr>
+								<TD class="trbg1"><span id="lbxsgrxx_csrq">出生日期：</span></TD>
+								<TD><span id="lbl_csrq">19951007</span></TD>
+								<TD class="trbg1"><span id="lbxsgrxx_byzx">毕业中学：</span></TD>
+								<TD colSpan="2"><span id="lbl_byzx">台州市第一中学</span></TD>
+								<td class="trbg1"><span id="lbxsgrxx_fqxm">父亲姓名：</span></td>
+								<td width="165"><input name="fqxm" type="text" id="fqxm" /></td>
+							</tr>
+							<tr>
+								<TD class="trbg1"><span id="lbxsgrxx_mz">民族：</span></TD>
+								<TD><span id="lbl_mz">汉族</span></TD>
+								<TD class="trbg1"><span id="lbxsgrxx_ssh">宿舍号：</span></TD>
+								<TD colSpan="2"><input name="ssh" type="text" id="ssh" /></TD>
+								<TD class="trbg1"><span id="lbxsgrxx_fqdw">父亲单位：</span></TD>
+								<TD width="165"><input name="fqdw" type="text" id="fqdw" /></TD>
+							</tr>
+							<tr>
+								<TD class="trbg1"><span id="lbxsgrxx_jg">籍贯：</span></TD>
+								<TD><input name="txtjg" type="text" id="txtjg" class="text_nor" class="WebUserControl11textboxwidth" /><SPAN style="BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; BORDER-LEFT: red 0px solid; WIDTH: 18px; BORDER-BOTTOM: red 0px solid"><select name="jg" onchange="__doPostBack('jg','')" language="javascript" id="jg" class="WebUserControl11showarrow">
+	<option value=""></option>
+
+</select>
+									</SPAN></TD>
+								<TD class="trbg1"><span id="lbxsgrxx_dzyx">电子邮箱：</span></TD>
+								<TD colSpan="2"><input name="dzyxdz" type="text" id="dzyxdz" /></TD>
+								<TD class="trbg1"><span id="lbxsgrxx_fqdwyb">父亲单位邮编：</span></TD>
+								<TD width="165"><input name="fqdwyb" type="text" id="fqdwyb" /></TD>
+								<td><input name="File1" id="File1" type="file" class="text_nor" onclick="return check();" size="8" /></td>
+							</tr>
+							<tr>
+								<TD class="trbg1" height="7"><span id="lbxsgrxx_zzmm">政治面貌：</span></TD>
+								<TD height="7"><span id="lbl_zzmm">共青团员 </span></TD>
+								<TD class="trbg1" height="7"><span id="lbxsgrxx_lxdh">联系电话：</span></TD>
+								<TD colSpan="2" height="7"><input name="lxdh" type="text" value="13738507379,13586159" id="lxdh" /></TD>
+								<TD class="trbg1" height="7"><span id="lbxsgrxx_mqxm">母亲姓名：</span></TD>
+								<TD width="165" height="7"><input name="mqxm" type="text" id="mqxm" /></TD>
+								<td align="center" height="7"></td>
+							</tr>
+							<tr>
+								<TD class="trbg1"><span id="lbxsgrxx_lydq">来源地区：</span></TD>
+								<TD><span id="lbl_lydq"></span></TD>
+								<TD class="trbg1"><span id="lbxsgrxx_yzbm">邮政编码：</span></TD>
+								<TD colSpan="2"><input name="yzbm" type="text" id="yzbm" /></TD>
+								<TD class="trbg1"><span id="lbxsgrxx_mqdw">母亲单位：</span></TD>
+								<TD width="165"><input name="mqdw" type="text" id="mqdw" /></TD>
+								<td align="center"></td>
+							</tr>
+							<tr>
+								<td class="trbg1"><span id="lbxsgrxx_lys">来源省：</span></td>
+								<td><span id="lbl_lys"></span></td>
+								<TD class="trbg1"><span id="lbxsgrxx_zkzh">准考证号：</span></TD>
+								<TD colSpan="2"><span id="lbl_zkzh">3117</span></TD>
+								<TD class="trbg1"><span id="lbxsgrxx_mqdwyb">母亲单位邮编：</span></TD>
+								<TD width="165"><input name="mqdwyb" type="text" id="mqdwyb" /></TD>
+								<td align="center">&nbsp;</td>
+							</tr>
+							<tr>
+								<TD class="trbg1"><span id="lbxsgrxx_csd">出生地：</span></TD>
+								<TD><input name="csd" type="text" id="csd" /></TD>
+								<TD class="trbg1"><span id="lbxsgrxx_sfzh">身份证号：</span></TD>
+								<TD colSpan="2"><span id="lbl_sfzh">331082199510077458</span></TD>
+								<TD class="trbg1" width="241" colSpan="2"><span id="lbxsgrxx_fqdwdhhsj">父亲单位电话或手机：</span></TD>
+								<TD><input name="fqdwdh" type="text" id="fqdwdh" /></TD>
+							</tr>
+							<tr>
+								<td class="trbg1"><span id="lbxsgrxx_jkzk">健康状况：</span></td>
+								<td><input name="jkzk" type="text" id="jkzk" /></td>
+								<TD class="trbg1"><span id="lbxsgrxx_xlcc">学历层次：</span></TD>
+								<TD colSpan="2"><span id="lbl_CC">本科</span></TD>
+								<TD class="trbg1" width="241" colSpan="2"><span id="lbxsgrxx_mqdwdhhsj">母亲单位电话或手机：</span></TD>
+								<TD><input name="mqdwdh" type="text" id="mqdwdh" /></TD>
+							</tr>
+							<tr>
+								<TD class="trbg1"><span id="lbxsgrxx_xy">学院：</span></TD>
+								<TD><span id="lbl_xy">信息管理与工程学院</span></TD>
+								<TD class="trbg1"><span id="lbxsgrxx_gatm">港澳台码：</span></TD>
+								<TD colSpan="2"><span id="lbl_gatm"></span></TD>
+								<td class="trbg1" width="241" colSpan="2"><span id="lbxsgrxx_jtdz">家庭地址：</span></td>
+								<TD><input name="jtdz" type="text" id="jtdz" /></TD>
+							</tr>
+							<tr>
+								<TD class="trbg1"><span id="lbxsgrxx_x">系：</span></TD>
+								<TD><span id="lbl_xi"></span></TD>
+								<TD class="trbg1"><span id="lbxsgrxx_bdh">报到号：</span></TD>
+								<TD colSpan="2"><span id="lbl_bdh"></span></TD>
+								<TD class="trbg1" width="241" colSpan="2"><span id="lbxsgrxx_jtszd">家庭所在地（/省/县）：</span></TD>
+								<TD><span id="lbl_jtszd">浙江省台州市临海市桃渚镇老厂基村东亚路23号</span></TD>
+							</tr>
+							<tr>
+								<TD id="TDzymc" class="trbg1"><span id="lbxsgrxx_zymc">专业名称：</span></TD>
+
+								<TD><span id="lbl_zymc">计算机科学与技术</span></TD>
+								<TD class="trbg1" id="TDsfgspydy" colSpan="3"><span id="lbxsgrxx_sfgspydy">是否高水平运动员：</span><span id="lbl_SFGSPYDY"></span></TD>
+								<td class="trbg1" vAlign="top" rowSpan="4"><span id="lbxsgrxx_bz">备注：</span></td>
+								<td colSpan="2" rowSpan="4"><textarea name="bz" rows="8" id="bz"></textarea></td>
+							</tr>
+							<tr>
+								<TD class="trbg1"><span id="lbxsgrxx_jxbmc">教学班名称：</span></TD>
+								<TD><span id="lbl_JXBMC"></span></TD>
+								<TD id="TDyydj" class="trbg1"><span id="lbxsgrxx_yydj">英语等级：</span></TD>
+
+								<TD colSpan="2"><span id="lbl_yydj"></span></TD>
+							</tr>
+							<tr>
+								<TD class="trbg1"><span id="lbxsgrxx_xzb">行政班：</span></TD>
+								<TD><span id="lbl_xzb">14计算机2</span></TD>
+								<TD id="TDyycj" class="trbg1"><span id="lbxsgrxx_yycj">英语成绩：</span></TD>
+
+								<TD colSpan="2"><span id="lbl_YYCJ"></span></TD>
+							</tr>
+							<tr>
+								<TD id="TDxz" class="trbg1"><span id="lbxsgrxx_xz">学制：</span></TD>
+
+								<TD><span id="lbl_xz">4</span></TD>
+								<TD id="TDljbym" class="trbg1"><span id="lbxsgrxx_ljbym">录检表页码：</span></TD>
+
+								<TD colSpan="2"><span id="lbl_LJBYM"></span></TD>
+							</tr>
+							<tr>
+								<TD class="trbg1" height="39"><span id="lbxsgrxx_xxnx">学习年限：</span></TD>
+								<TD height="39"><span id="lbl_xxnx"></span></TD>
+								<TD class="trbg1" height="39"><span id="lbxsgrxx_tc">特长：</span></TD>
+								<TD colSpan="2" height="39"><input name="tc" type="text" id="tc" /></TD>
+								<td class="trbg1" width="241" colSpan="2" height="39"></td>
+								<TD height="39"></TD>
+							</tr>
+							<tr>
+								<TD class="trbg1" height="39"><span id="lbxsgrxx_xjzt">学籍状态：</span></TD>
+								<TD height="39"><span id="lbl_xjzt">有</span></TD>
+								<TD class="trbg1" height="39"><span id="lbxsgrxx_rdsj">入党(团)时间：</span></TD>
+								<TD colSpan="2" height="39"><input name="RDSJ" type="text" id="RDSJ" /></TD>
+								<td class="trbg1" width="241" colSpan="2" height="39"></td>
+								<TD height="39"></TD>
+							</tr>
+							<tr>
+								<TD class="trbg1" height="39"><span id="lbxsgrxx_dqszj">当前所在级：</span></TD>
+								<TD height="39"><span id="lbl_dqszj">2014</span></TD>
+								<TD id="TDccqj" class="trbg1" height="39"><span id="lbxsgrxx_hczdz">火车终点站：</span></TD>
+
+								<TD colSpan="2" height="39"><span id="lbl_ccqj"></span></TD>
+								<td class="trbg1" width="241" colSpan="2" height="39"><span id="lbxsgrxx_zmr">证明人：</span></td>
+								<TD height="39"></TD>
+							</tr>
+							<tr id="trksh">
+	<td class="trbg1"><span id="lbxsgrxx_ksh">考生号：</span></td>
+	<TD><span id="lbl_ksh">14331088150689</span></TD>
+	<td class="trbg1"><span id="lbxsgrxx_xxxs">学习形式：</span></td>
+	<TD colspan="2"><span id="lbl_xxxs">普通全日制</span></TD>
+	<TD class="trbg1" width="241" colspan="2"></TD>
+	<TD><FONT face="宋体"></FONT></TD>
+</tr>
+
+							
+							
+							
+							
+							
+						</table>
+						<TABLE class="formlist" width="100%">
+							<TR>
+								<TD height="49"></TD>
+							</TR>
+						</TABLE>
+						
+					</span>
+					<div class="footbox"><em class="footbox_con"><span class="pagination"></span><span class="footbutton">
+								<div align="center"><input type="submit" name="Button1" value="提 交" id="Button1" class="button" /></div>
+							</span>
+							<!-- 底部按钮位置 --></em></div>
+				</div>
+			</div>
+		</form>
+	</BODY>
+	
+</HTML>
+<SCRIPT language="javascript">
+function click() {
+	if (event.button==2) {  //改成button==2为禁止右键
+		if (language())
+		{
+			alert('Sorry, this function is forbidden!');
+		}
+		else
+		{
+			alert('对不起,禁止使用此功能.');
+		}
+	}
+}
+document.all.xszp.onmousedown=click
+</SCRIPT>

@@ -1,0 +1,77 @@
+﻿<Page x:Class="正方系统抢课辅助.pages.PublicCourseChoose"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="500" 
+	Title="PublicCourseChoose" >
+
+    <Grid>
+        <StackPanel >
+            <StackPanel Orientation="Horizontal">
+                <TextBlock>课程性质：</TextBlock>
+                <ComboBox>
+                    <ComboBoxItem  IsSelected="True">校公选课</ComboBoxItem>
+                </ComboBox>
+
+
+                <TextBlock>有无余量：</TextBlock>
+                <ComboBox Name="cbx_had" SelectionChanged="SearchData">
+                    <ComboBoxItem  IsSelected="True" >有</ComboBoxItem>
+                    <ComboBoxItem >无</ComboBoxItem>
+                </ComboBox>
+
+                <TextBlock>课程归属：</TextBlock>
+                <ComboBox Name="cbx_CourseBelong" SelectionChanged="SearchData"></ComboBox>
+
+            </StackPanel>
+            <TextBlock Text="上课时间："/>
+            <ComboBox Name="cbx_TakeCourseTime" Width="500" HorizontalAlignment="Left" SelectionChanged="SearchData"></ComboBox>
+            <TextBlock Text="按课程名称查找:"></TextBlock>
+            <StackPanel Orientation="Horizontal">
+            <TextBox Name="Txb_CourseName" Width="200" Height="25" HorizontalAlignment="Left"></TextBox>
+                <Button Content="查找" Width="100" Name="btn_Search" Click="SearchData"></Button>
+                <Button Content="全部显示" Width="100" Margin="10,0,0,0"  Name="btn_SearchAll" Click="btn_SearchAll_Click"></Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock >选课</TextBlock>
+                <TextBlock Width="150">课程名称</TextBlock>
+                <TextBlock Width="150">上课时间</TextBlock>
+                <TextBlock Width="150">上课地点</TextBlock>
+                <TextBlock Width="80">教师姓名</TextBlock>
+                <TextBlock Width="50">容量</TextBlock>
+                <TextBlock Width="50">余量</TextBlock>
+                <TextBlock Width="50">学分</TextBlock>
+                <TextBlock Width="100">课程代码</TextBlock>
+                <TextBlock Width="50">周学时</TextBlock>
+                <TextBlock Width="50">起始周</TextBlock>
+                <TextBlock Width="150">课程归属</TextBlock>
+                <TextBlock Width="100">开课学院</TextBlock>
+            </StackPanel>
+            <TextBlock Text="正在抢课，卡频是正常的，成功会有提示……" Visibility="Collapsed" Name="tip" Foreground="Red"  FontFamily="黑体" FontSize="20"></TextBlock>
+            <ListView Name="lv_Course" Height="400" ItemsSource="{Binding list_EvaluateDetail,Mode=TwoWay}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal" >
+                            <CheckBox IsChecked="{Binding IsChecked}"></CheckBox>
+                            <TextBlock Width="150" Text="{Binding CourseName}"></TextBlock>
+                            <TextBlock Width="150" Text="{Binding CourseTime}"></TextBlock>
+                            <TextBlock Width="150" Text="{Binding CoursePlace}"></TextBlock>
+                            <TextBlock Width="80" Text="{Binding CourseTeacherName}"></TextBlock>
+                            <TextBlock Width="50" Text="{Binding CourseAll}"></TextBlock>
+                            <TextBlock Width="50" Text="{Binding CourseRemaind}"></TextBlock>
+                            <TextBlock Width="50" Text="{Binding CourseScore}"></TextBlock>
+                            <TextBlock Width="100" Text="{Binding CourseNum}"></TextBlock>
+                            <TextBlock Width="50" Text="{Binding CourseWeekTime}"></TextBlock>
+                            <TextBlock Width="50" Text="{Binding CourseStarEndWeek}"></TextBlock>
+                            <TextBlock Width="150" Text="{Binding CourseBelongs}"></TextBlock>
+                            <TextBlock Width="100" Text="{Binding CourseOpenCollege}"></TextBlock>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button HorizontalAlignment="Right" Width="100" Height="30" Content="确定选课！" Click="btn_Choose_Click" Name="btn_Choose"></Button>
+        </StackPanel>
+    </Grid>
+</Page>
